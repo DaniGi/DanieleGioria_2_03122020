@@ -1,15 +1,25 @@
-/* Eléments principaux de la page */
+/* Custom fonts */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('../Raleway/static/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Main page elements */
 
 body
 {  
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
 }
 
-#bloc_page
+button
 {
-    width: 850px;
-    margin: auto;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 p
@@ -25,6 +35,18 @@ header
   margin-bottom: 10px;
 }
 
+.icon
+{
+  width: 15px;
+  height: 15px;
+}
+
+#bloc_page
+{
+    width: 850px;
+    margin: auto;
+}
+
 nav ul
 {
   padding: 0;  
@@ -34,13 +56,17 @@ nav ul
 
 nav li
 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav a
 {
   text-decoration: none;
   color: black;
+}
+
+#subscribe_link{
+  color: #0065FC;
 }
 
 nav a:hover
@@ -106,10 +132,8 @@ nav a:hover
 
 #filter_list .filter_list-item img
 {
-  width: 15px;
-  height: 15px;
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
   color: #0065FC;
   background-color: #DEEBFF;
   border-radius: 50%;
