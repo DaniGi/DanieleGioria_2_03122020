@@ -64,7 +64,7 @@ header
 
 #bloc_page
 {
-    width: 950px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -182,16 +182,15 @@ nav a:hover
 
 #search_results_section
 {
-  padding: 20px 15px 20px 15px;
+  padding: 20px 20px 20px 20px;
   background-color: #F2F2F2;
   border-radius: 10px;
-  width: 650px;
+  width: 635px;
 }
 
 #serch_result_card_grid
 {
   display: flex;
-
   justify-content: space-between;
   margin-bottom: 15px;
   flex-wrap: wrap;
@@ -199,18 +198,28 @@ nav a:hover
 
 .search_results_card
 {
-  width: 200px;
+  width: 190px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 3px;
   margin-top: 15px;
 }
 
-.search_results_card img
+.search_results_card .card_img
 {
-  height: 100px;
-  width: 200px;
-  border-radius: 5px 5px 0 0;
+  height: 85px;
+  width: 190px;
+  border-radius: 20px 20px 0 0;
+}
+
+.search_results_card .card_body
+{
+  margin-left: 10px;
+}
+
+.search_results_card .icon
+{
+  padding: 0;
 }
 
 #popular_results_aside
@@ -218,5 +227,51 @@ nav a:hover
   background-color: #F2F2F2;
   border-radius: 10px;
   padding: 20px 15px 20px 15px;
-  width: 225px;
+  width: 260px;
+}
+
+#popular_card_list
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+}
+
+.popular_card
+{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px;
+  margin-top: 15px;
+}
+
+.popular_card .card_img
+{
+  height: 95px;
+  width: 95px;
+  border-radius: 20px 0 0 20px;
+}
+
+.popular_card .icon
+{
+  padding: 0;
+}
+
+.popular_card .card_body
+{
+  margin-left: 10px;
+}
+
+.card_body p
+{
+  margin: 2px 0;
+}
+
+.card_body h3
+{
+  margin-top: 2px;
 }
