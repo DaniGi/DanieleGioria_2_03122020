@@ -185,7 +185,7 @@ nav a:hover
   padding: 20px 20px 20px 20px;
   background-color: #F2F2F2;
   border-radius: 10px;
-  width: 635px;
+  width: 65%;
 }
 
 #serch_result_card_grid
@@ -208,7 +208,7 @@ nav a:hover
 .search_results_card .card_img
 {
   height: 85px;
-  width: 190px;
+  width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
@@ -227,7 +227,7 @@ nav a:hover
   background-color: #F2F2F2;
   border-radius: 10px;
   padding: 20px 15px 20px 15px;
-  width: 260px;
+  width: 26%;
 }
 
 #popular_card_list
@@ -263,7 +263,14 @@ nav a:hover
 
 .popular_card .card_body
 {
+  display: flex;
+  flex-direction: column;
   margin-left: 10px;
+}
+
+.popular_card .review
+{
+  margin-top: auto;
 }
 
 .card_body p
@@ -275,3 +282,110 @@ nav a:hover
 {
   margin-top: 2px;
 }
+
+#activities_block
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+#activity_card_list
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.activity_slot
+{
+  width: 23%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity_card
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px #1c1a19;
+}
+
+.activity_card .card_img
+{
+  flex: 1;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.center_text
+{
+  flex-basis: 30px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.center_text h3
+{
+  margin-left: 10px;
+}
+
+.activity_slot.first .activity_card.first
+{
+  height: 160px;
+}
+
+.activity_slot.first .activity_card.first .card_img
+{
+  height: 130px;
+}
+
+.activity_slot.first .activity_card.second
+{
+  height: 160px;
+}
+
+.activity_slot.first .activity_card.second .card_img
+{
+  height: 130px;
+}
+/* SECOND ACTIVITIES SLOT */
+.activity_slot.second .activity_card.first
+{
+  height: 130px;
+}
+
+.activity_slot.second .activity_card.first .card_img
+{
+  height: 100px;
+}
+
+.activity_slot.second .activity_card.second
+{
+  height: 190px;
+}
+
+.activity_slot.second .activity_card.second .card_img
+{
+  height: 160px;
+}
+
+footer
+{
+  display: flex;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+}
+
+footer div
+{
+  padding: 20px;
+  margin-right: 150px;
+}
+
