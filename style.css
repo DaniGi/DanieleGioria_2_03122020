@@ -14,6 +14,7 @@ body
 {  
     font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
+    /* width: 1000px; */
 }
 
 button
@@ -58,6 +59,11 @@ a:hover
   color: #0065FC;
 }
 
+header, footer{
+  width: 1000px;
+  margin: auto;
+}
+
 header
 {
   display: flex;
@@ -80,6 +86,11 @@ header
     margin: auto;
 }
 
+#titre_principal
+{
+  padding-left: 15px;
+}
+
 nav ul
 {
   padding: 0;  
@@ -87,14 +98,9 @@ nav ul
   display: flex;
 }
 
-nav li
-{
-  margin-left: 20px;
-}
-
 nav a
 {
-  padding: 10px 5px 0 5px;;
+  padding: 16px 15px 0 15px;;
 }
 
 nav a:hover
@@ -400,3 +406,12 @@ footer div
   margin-right: 150px;
 }
 
+footer h1
+{
+  margin-bottom: 10px;
+}
+
+footer p
+{
+  margin-bottom: 5px;
+}
