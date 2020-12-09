@@ -20,12 +20,18 @@
 
       <nav>
         <ul class="flex">
-            <li><a href="#search_results_block">Hébergements</a></li>
-            <li><a href="#activities_block">Activités</a></li>
-            <li><a class="blue" href="#"><strong>S'inscrire</strong></a></li>
+          <li><a href="#search_results_block">Hébergements</a></li>
+          <li><a href="#activities_block">Activités</a></li>
+          <!-- <li></li><a class="blue" href="#"><strong>S'inscrire</strong></a></li> -->
         </ul>
       </nav>
 
+      <nav>
+        <ul class="flex">
+          <li><a class="blue" href="#"><strong>S'inscrire</strong></a></li>
+        </ul>
+      </nav>
+      
     </header>
 
     <div id="block_page">
@@ -41,36 +47,40 @@
           <button><strong>Rechercher</strong></button>
         </div>
 
-        <div id="filter_list" class="flex">
+        <div id="filter-container" class="flex">
 
           <h3><strong>Filtres</strong></h3>
 
-          <div class="filter_list-item flex">
-            <i class="fas fa-money-bill-wave blue"></i>
-            <!-- <img class="icon" src="images/icons/money-bill-wave-solid.svg" alt="money icon"> -->
-            <h3><strong>Economique</strong></h3>
-          </div>
+          <div id="filter-list" class="flex">
 
-          <div class="filter_list-item flex">
-            <i class="fas fa-child blue"></i>
-            <!-- <img class="icon" src="images/icons/map-marker-alt-solid.svg" alt="Family icon"> -->
-            <h3><strong>Familial</strong></h3>
-          </div>
+            <div class="filter-list--item flex">
+              <i class="fas fa-money-bill-wave blue"></i>
+              <!-- <img class="icon" src="images/icons/money-bill-wave-solid.svg" alt="money icon"> -->
+              <h3><strong>Economique</strong></h3>
+            </div>
 
-          <div class="filter_list-item flex">
-            <i class="fas fa-heart blue"></i>
-            <!-- <img class="icon" src="images/icons/heart-solid.svg" alt="Heart icon"> -->
-            <h3><strong>Romantique</strong></h3>
-          </div>
+            <div class="filter-list--item flex">
+              <i class="fas fa-child blue"></i>
+              <!-- <img class="icon" src="images/icons/map-marker-alt-solid.svg" alt="Family icon"> -->
+              <h3><strong>Familial</strong></h3>
+            </div>
 
-          <div class="filter_list-item flex">
-            <i class="fas fa-dog blue"></i>
-            <!-- <img class="icon" src="images/icons/dog-solid.svg" alt="Dog icon"> -->
-            <h3><strong>Animaux autorisés</strong></h3>
+            <div class="filter-list--item flex">
+              <i class="fas fa-heart blue"></i>
+              <!-- <img class="icon" src="images/icons/heart-solid.svg" alt="Heart icon"> -->
+              <h3><strong>Romantique</strong></h3>
+            </div>
+
+            <div class="filter-list--item flex">
+              <i class="fas fa-dog blue"></i>
+              <!-- <img class="icon" src="images/icons/dog-solid.svg" alt="Dog icon"> -->
+              <h3><strong>Animaux autorisés</strong></h3>
+            </div>
+
           </div>
 
         </div>
-
+        
         <div id="info_n_logements" class="flex">
           <i class="fas fa-info blue"></i>
           <!-- <img class="icon info" src="images/icons/info-solid.svg" alt="Info icon"> -->
