@@ -1,4 +1,4 @@
-/* Custom fonts */
+/* CUSTOM FONT */
 
 @font-face
 {
@@ -8,7 +8,24 @@
     font-style: normal;
 }
 
-/* Main page elements */
+/* UTILITY CLASSES */
+
+.flex
+{
+  display: flex;
+}
+
+.blue
+{
+  color: #0065FC;
+}
+
+.width100
+{
+  width: 100%;
+}
+
+/* HTML ELEMENTS */
 
 body
 {  
@@ -58,13 +75,10 @@ header, footer{
   margin: auto;
 }
 
-header
+/* ICONS */
+i
 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 20px;
-  background-color:  #DEEBFF;
+  padding: 9px;
 }
 
 .icon
@@ -72,12 +86,6 @@ header
   width: 15px;
   height: 15px;
   padding: 10px;
-}
-
-i
-{
-  padding: 9px;
-  color: #0065FC;
 }
 
 .fa-money-bill-wave
@@ -91,7 +99,7 @@ i
   padding: 9px 11px;
 }
 
-.fa-star
+.fa-star, nav ul, .popular_card .icon
 {
   padding: 0;
 }
@@ -101,10 +109,14 @@ i
   color: #cecece;
 }
 
-#bloc_page
+/* HEADER */
+
+header
 {
-  width: 950px;
-  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-color:  #DEEBFF;
 }
 
 #titre_principal
@@ -113,10 +125,8 @@ i
 }
 
 nav ul
-{
-  padding: 0;  
+{ 
   list-style-type: none;
-  display: flex;
 }
 
 nav a
@@ -129,17 +139,23 @@ nav a:hover
   border-top: 2px solid #0065FC;
 }
 
-#subscribe_link{
-  color: #0065FC;
+/* BLOCK PAGE */
+
+#block_page
+{
+  width: 950px;
+  margin: auto;
 }
 
+/* ----> SEARCH BLOCK */
+
+/* --------> SEARCH BOX */
 #search_box
 {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 10px;
   width: 300px;
-  display: flex;
   margin: 15px 0;
 }
 
@@ -164,16 +180,15 @@ nav a:hover
   flex-basis: 150px;
 }
 
+/* --------> FILTER LIST */
 #filter_list
 {
   margin: 20px 0;
-  display: flex;
   align-items: center;
 }
 
 #filter_list .filter_list-item
 {
-  display: flex;
   align-items: center;
   width: auto;
   height: 34px;
@@ -212,9 +227,9 @@ nav a:hover
   margin-right: 5px;
 } */
 
+/* --------> INFO N LOGEMENTS */
 #info_n_logements
 {
-  display: flex;
   align-items: center;
   margin-bottom: 25px;
 }
@@ -226,15 +241,15 @@ nav a:hover
   border: 1px solid #DEEBFF;
   border-radius: 50%;
   margin-right: 5px;
-  color: #0065FC;
 }
 
+/* ----> SEARCH RESULTS BLOCK */
 #search_results_block
 { 
-  display: flex;
   justify-content: space-between;
 }
 
+/* --------> SEARCH RESULTS SECTION */
 #search_results_section
 {
   padding: 20px 20px 20px 20px;
@@ -245,7 +260,6 @@ nav a:hover
 
 #serch_result_card_grid
 {
-  display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
   flex-wrap: wrap;
@@ -263,7 +277,6 @@ nav a:hover
 .search_results_card .card_img
 {
   height: 85px;
-  width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
@@ -277,6 +290,7 @@ nav a:hover
   padding: 0;
 } */
 
+/* --------> POPULAR RESULTS ASIDE */
 #popular_results_aside
 {
   background-color: #F2F2F2;
@@ -287,7 +301,6 @@ nav a:hover
 
 #popular_card_list
 {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -296,7 +309,6 @@ nav a:hover
 
 .popular_card
 {
-  display: flex;
   width: 100%;
   background-color: white;
   border-radius: 20px;
@@ -311,14 +323,8 @@ nav a:hover
   border-radius: 20px 0 0 20px;
 }
 
-.popular_card .icon
-{
-  padding: 0;
-}
-
 .popular_card .card_body
 {
-  display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
@@ -338,16 +344,15 @@ nav a:hover
   margin-top: 2px;
 }
 
+/* ----> ACTIVITIES BLOCK */
 #activities_block
 {
-  display: flex;
   flex-direction: column;
   margin-top: 25px;
 }
 
 #activity_card_list
 {
-  display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
@@ -356,7 +361,6 @@ nav a:hover
 {
   width: 23%;
   height: 350px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -365,7 +369,6 @@ nav a:hover
 {
   width: 100%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0px 2px 5px #7c7a7a;
@@ -382,13 +385,12 @@ nav a:hover
 {
   flex-basis: 30px;
   margin-top: auto;
-  display: flex;
   align-items: center;
 }
 
 .center_text h3
 {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .activity_slot.first .activity_card.first
@@ -410,7 +412,7 @@ nav a:hover
 {
   height: 130px;
 }
-/* SECOND ACTIVITIES SLOT */
+
 .activity_slot.second .activity_card.first
 {
   height: 130px;
@@ -431,9 +433,9 @@ nav a:hover
   height: 160px;
 }
 
+/* FOOTER */
 footer
 {
-  display: flex;
   margin-top: 20px;
   background-color: #F2F2F2;
 }

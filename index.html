@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
   <head>
     <title>Reservia</title>
@@ -10,7 +10,7 @@
 
   <body>
 
-    <header>
+    <header class="flex">
 
       <div id="titre_principal">
         <div id="logo">
@@ -19,150 +19,150 @@
       </div>
 
       <nav>
-        <ul>
+        <ul class="flex">
             <li><a href="#search_results_block">Hébergements</a></li>
             <li><a href="#activities_block">Activités</a></li>
-            <li><a id='subscribe_link' href="#"><strong>S'inscrire</strong></a></li>
+            <li><a class="blue" href="#"><strong>S'inscrire</strong></a></li>
         </ul>
       </nav>
 
     </header>
 
-    <div id="bloc_page">
+    <div id="block_page">
       
       <div id="search_block">
 
         <h1><strong>Trouvez votre hébergements pour des vacances de réve</strong></h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <div id="search_box">
+        <div id="search_box" class="flex">
           <img class="icon" src="images/icons/map-marker-alt-solid.svg" alt="map icon">
           <input type="text">
           <button><strong>Rechercher</strong></button>
         </div>
 
-        <div id="filter_list">
+        <div id="filter_list" class="flex">
 
           <h3><strong>Filtres</strong></h3>
 
-          <div class="filter_list-item">
-            <i class="fas fa-money-bill-wave"></i>
+          <div class="filter_list-item flex">
+            <i class="fas fa-money-bill-wave blue"></i>
             <!-- <img class="icon" src="images/icons/money-bill-wave-solid.svg" alt="money icon"> -->
             <h3><strong>Economique</strong></h3>
           </div>
 
-          <div class="filter_list-item">
-            <i class="fas fa-child"></i>
+          <div class="filter_list-item flex">
+            <i class="fas fa-child blue"></i>
             <!-- <img class="icon" src="images/icons/map-marker-alt-solid.svg" alt="Family icon"> -->
             <h3><strong>Familial</strong></h3>
           </div>
 
-          <div class="filter_list-item">
-            <i class="fas fa-heart"></i>
+          <div class="filter_list-item flex">
+            <i class="fas fa-heart blue"></i>
             <!-- <img class="icon" src="images/icons/heart-solid.svg" alt="Heart icon"> -->
             <h3><strong>Romantique</strong></h3>
           </div>
 
-          <div class="filter_list-item">
-            <i class="fas fa-dog"></i>
+          <div class="filter_list-item flex">
+            <i class="fas fa-dog blue"></i>
             <!-- <img class="icon" src="images/icons/dog-solid.svg" alt="Dog icon"> -->
-            <h3><strong>Animaux autorisés</strong><h3>
+            <h3><strong>Animaux autorisés</strong></h3>
           </div>
 
         </div>
 
-        <div id="info_n_logements">
-          <i class="fas fa-info"></i>
+        <div id="info_n_logements" class="flex">
+          <i class="fas fa-info blue"></i>
           <!-- <img class="icon info" src="images/icons/info-solid.svg" alt="Info icon"> -->
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
       </div>
 
-      <div id="search_results_block">
+      <div id="search_results_block" class="flex">
 
         <section id="search_results_section">
 
-          <h1><strong>Hébergements a Marseille</strong></h1>
+          <h2><strong>Hébergements a Marseille</strong></h2>
 
-          <div id="serch_result_card_grid">
+          <div id="serch_result_card_grid" class="flex">
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
                 <i class="fas fa-star grey"></i>
                 <!-- <img class="icon" src="images/icons/star-solid.svg" alt="Star icon"> -->
               </div>
             </div>
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
               </div>
             </div>
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
                 <i class="fas fa-star grey"></i>
               </div> 
             </div>
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
                 <i class="fas fa-star grey"></i>
                 <i class="fas fa-star grey"></i>
               </div> 
             </div>
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
                 <i class="fas fa-star grey"></i>
               </div>
             </div>
 
             <div class="search_results_card">
-              <img class="card_img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+              <img class="card_img width100" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
               <div class="card_body">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
+                <i class="fas fa-star blue"></i>
               </div>
             </div>
 
@@ -174,106 +174,107 @@
 
         <aside id="popular_results_aside">
 
-          <h1><strong>Les plus populaires</strong></h1>
+          <h2><strong>Les plus populaires</strong></h2>
 
-          <div id="popular_card_list">
+          <div id="popular_card_list" class="flex">
 
-            <div class="popular_card">
+            <div class="popular_card flex">
               <img class="card_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-              <div class="card_body">
+              <div class="card_body flex">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="review">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
                 </div>
               </div>
             </div>
 
-            <div class="popular_card">
+            <div class="popular_card flex">
               <img class="card_img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-              <div class="card_body">
+              <div class="card_body flex">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="review">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
                   <i class="fas fa-star grey"></i>
                 </div>
               </div>
             </div>
 
-            <div class="popular_card">
+            <div class="popular_card flex">
               <img class="card_img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
-              <div class="card_body">
+              <div class="card_body flex">
                 <h3>Auberge la Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="review">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
                   <i class="fas fa-star grey"></i>
                 </div>
               </div>
             </div>
           </div>
         </aside>
+
       </div>
 
-      <div id="activities_block">
+      <div id="activities_block" class="flex">
 
         <h1><strong>Activités à Marseille</strong></h1>
 
-        <div id="activity_card_list">
+        <div id="activity_card_list" class="flex">
 
-          <div class="activity_slot">
+          <div class="activity_slot flex">
 
-            <div class="activity_card">
+            <div class="activity_card flex">
               <img class="card_img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
           </div>
           
-          <div class="activity_slot first">
+          <div class="activity_slot flex first">
 
-            <div class="activity_card first">
+            <div class="activity_card flex first">
               <img class="card_img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
-            <div class="activity_card second">
+            <div class="activity_card flex second">
               <img class="card_img" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
           </div>
 
-          <div class="activity_slot">
+          <div class="activity_slot flex">
 
-            <div class="activity_card">
+            <div class="activity_card flex">
               <img class="card_img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
           </div>
 
-          <div class="activity_slot second">
+          <div class="activity_slot flex second">
 
-            <div class="activity_card first">
+            <div class="activity_card flex first">
               <img class="card_img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
-            <div class="activity_card second">
+            <div class="activity_card flex second">
               <img class="card_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-              <div class="center_text"><h3>Vieux port</h3></div>
+              <div class="center_text flex"><h3>Vieux port</h3></div>
             </div>
 
           </div>
@@ -284,7 +285,7 @@
 
     </div>
 
-    <footer>
+    <footer class="flex">
 
       <div id="a_propos">
           <h1>A propos</h1>
@@ -308,4 +309,4 @@
     </footer>
 
   </body>
-<html>
+</html>
