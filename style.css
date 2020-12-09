@@ -82,8 +82,8 @@ header
 
 #bloc_page
 {
-    width: 950px;
-    margin: auto;
+  width: 950px;
+  margin: auto;
 }
 
 #titre_principal
@@ -408,7 +408,7 @@ footer div
 
 footer h1
 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 footer p
