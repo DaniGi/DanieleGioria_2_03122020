@@ -14,7 +14,6 @@ body
 {  
     font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
-    /* width: 1000px; */
 }
 
 button
@@ -37,12 +36,7 @@ h2
   font-size: 0.9rem;
 }
 
-h3
-{
-  font-size: 0.8rem;
-}
-
-p
+h3, p
 {
   font-size: 0.8rem;
 }
@@ -83,6 +77,7 @@ header
 i
 {
   padding: 9px;
+  color: #0065FC;
 }
 
 .fa-money-bill-wave
@@ -99,7 +94,6 @@ i
 .fa-star
 {
   padding: 0;
-  color: #0065FC;
 }
 
 .fa-star.grey
@@ -204,7 +198,6 @@ nav a:hover
 #filter_list .filter_list-item i
 {
   margin-right: 8px;
-  color: #0065FC;
   background-color: #DEEBFF;
   border-radius: 50%;
 }
