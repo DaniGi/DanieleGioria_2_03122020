@@ -110,7 +110,7 @@ i
   margin-bottom: 5px;
 }
 
-.fa-star, nav ul, .popular_card .icon
+.fa-star, nav ul, .popular-card .icon
 {
   padding: 0;
 }
@@ -292,13 +292,13 @@ nav a:hover
 }
 
 /* ----> SEARCH RESULTS BLOCK */
-#search_results_block
+#search-results-block
 { 
   justify-content: space-between;
 }
 
 /* --------> SEARCH RESULTS SECTION */
-#search_results_section
+#search-results-section
 {
   padding: 20px 20px 20px 20px;
   background-color: #F2F2F2;
@@ -306,14 +306,14 @@ nav a:hover
   width: 65%;
 }
 
-#search_result_card_grid
+#search-result-card-grid
 {
   justify-content: space-between;
   margin-bottom: 15px;
   flex-wrap: wrap;
 }
 
-.search_results_card
+.search-results-card
 {
   width: 190px;
   background-color: white;
@@ -323,24 +323,24 @@ nav a:hover
   flex-direction: column;
 }
 
-.search_results_card .card_img
+.search-results-card .card-img
 {
   height: 85px;
   border-radius: 20px 20px 0 0;
 }
 
-.search_results_card .card_body
+.search-results-card .card-body
 {
   margin-left: 10px;
 }
 
-/* .search_results_card .icon
+/* .search-results-card .icon
 {
   padding: 0;
 } */
 
 /* --------> POPULAR RESULTS ASIDE */
-#popular_results_aside
+#popular-results-aside
 {
   background-color: #F2F2F2;
   border-radius: 10px;
@@ -348,7 +348,7 @@ nav a:hover
   width: 26%;
 }
 
-#popular_card_list
+#popular-card-list
 {
   flex-direction: column;
   align-items: center;
@@ -356,7 +356,7 @@ nav a:hover
   height: 95%;
 }
 
-.popular_card
+.popular-card
 {
   width: 100%;
   background-color: white;
@@ -365,48 +365,48 @@ nav a:hover
   margin-top: 15px;
 }
 
-.popular_card .card_img
+.popular-card .card-img
 {
   height: 95px;
   width: 95px;
   border-radius: 20px 0 0 20px;
 }
 
-.popular_card .card_body
+.popular-card .card-body
 {
   flex-direction: column;
   margin-left: 10px;
 }
 
-.popular_card .review
+.popular-card .review
 {
   margin-top: auto;
 }
 
-.card_body p
+.card-body p
 {
   margin-bottom: 5px;
 }
 
-.card_body h3
+.card-body h3
 {
   margin: 5px 0;
 }
 
 /* ----> ACTIVITIES BLOCK */
-#activities_block
+#activities-block
 {
   flex-direction: column;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
-#activity_card_list
+#activity-card-list
 {
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.activity_slot
+.activity-slot
 {
   width: 23%;
   height: 350px;
@@ -414,16 +414,16 @@ nav a:hover
   justify-content: space-between;
 }
 
-.activity_card
+.activity-card
 {
   width: 100%;
   height: 100%;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 0px 2px 5px #7c7a7a;
+  box-shadow: 0px 2px 5px #cecdcd;
 }
 
-.activity_card .card_img
+.activity-card .card-img
 {
   flex: 1;
   width: 100%;
@@ -442,42 +442,42 @@ nav a:hover
   margin-left: 15px;
 }
 
-.activity_slot.first .activity_card.first
+.activity-slot.first .activity-card.first
 {
   height: 160px;
 }
 
-.activity_slot.first .activity_card.first .card_img
+.activity-slot.first .activity-card.first .card-img
 {
   height: 130px;
 }
 
-.activity_slot.first .activity_card.second
+.activity-slot.first .activity-card.second
 {
   height: 160px;
 }
 
-.activity_slot.first .activity_card.second .card_img
+.activity-slot.first .activity-card.second .card-img
 {
   height: 130px;
 }
 
-.activity_slot.second .activity_card.first
+.activity-slot.second .activity-card.first
 {
   height: 130px;
 }
 
-.activity_slot.second .activity_card.first .card_img
+.activity-slot.second .activity-card.first .card-img
 {
   height: 100px;
 }
 
-.activity_slot.second .activity_card.second
+.activity-slot.second .activity-card.second
 {
   height: 190px;
 }
 
-.activity_slot.second .activity_card.second .card_img
+.activity-slot.second .activity-card.second .card-img
 {
   height: 160px;
 }
@@ -485,13 +485,14 @@ nav a:hover
 /* FOOTER */
 footer
 {
+  flex-wrap: wrap;
   margin-top: 20px;
   background-color: #F2F2F2;
 }
 
 footer div
 {
-  padding: 20px;
+  padding: 15px;
   margin-right: 150px;
 }
 
@@ -549,6 +550,48 @@ footer p
   #search-text-button
   {
     display: none;
+  }
+
+  /* ----> SEARCH RESULTS BLOCK */
+  #search-results-block
+  {
+    flex-direction: column;
+  }
+
+  #search-results-section
+  {
+    order: 2;
+    width: auto;
+    background-color: white;
+    padding: 15px;
+  }
+
+  .search-results-card
+  {
+    width: 100%;
+    box-shadow: 0px 2px 5px #cecdcd;
+  }
+
+  #popular-results-aside
+  {
+    order: 1;
+    width: auto;
+    border-radius: 0;
+  }
+
+  #activities-block
+  {
+    padding: 25px 15px 0 15px;
+  }
+
+  #activity-card-list
+  {
+    flex-direction: column;
+  }
+
+  .activity-slot
+  {
+    width: 100%;
   }
 
 }
