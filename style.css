@@ -161,40 +161,53 @@ nav a:hover
 
 /* ----> SEARCH BLOCK */
 
-#search_block > p
+#search-block > p
 {
   margin-top: 5px;
 }
 
 /* --------> SEARCH BOX */
-#search_box
+#search-box
 {
-  background-color: #F2F2F2;
+  background-color: white;
   border: 1px solid #F2F2F2;
   border-radius: 10px;
   width: 300px;
   margin: 20px 0;
 }
 
-#search_box img
+#search-box img
 {
-  flex-basis: 20px;
-  width: 10px;
+  width: 20px;
+  background-color: #F2F2F2;
+  border-radius: 9px 0 0 9px;
 }
 
-#search_box input
+#search-box input
 {
   border: none;
+  flex: 1;
   padding: 0 10px 0 10px;
 }
 
-#search_box button
+#search-box button
 {
   border: none;
   color: white;
   background-color: #0065FC;
+}
+
+#search-text-button
+{
+  padding: 0 10px;
   border-radius: 0 10px 10px 0;
-  flex-basis: 150px;
+}
+
+#search-icon-button
+{
+  display: none;
+  padding: 0 5px;
+  border-radius: 10px;
 }
 
 /* --------> FILTER LIST */
@@ -497,9 +510,14 @@ footer p
 @media all and (max-device-width: 480px)
 {
 
-  header, footer, #block_page
+  header, footer
   {
     width: auto;
+  }
+
+  #block_page
+  {
+    width: 95%;
   }
 
   header
@@ -515,6 +533,22 @@ footer p
   .filter-list--item
   {
     margin-top: 10px;
+  }
+
+  #search-box
+  {
+    width: 100%;
+  }
+
+  #search-icon-button
+  {
+    display: block;
+    background-color: #0065FC;
+  }
+
+  #search-text-button
+  {
+    display: none;
   }
 
 }
