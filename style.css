@@ -240,8 +240,8 @@ nav a:hover
   width: auto;
   height: 34px;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; */
   border: 2px solid #F2F2F2;
   border-radius: 30px;
   border-left: none;
