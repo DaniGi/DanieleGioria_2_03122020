@@ -84,6 +84,7 @@ a:hover
 
 header, footer{
   width: 100%;
+  max-width: 1260px;
   margin: auto;
 }
 
@@ -135,6 +136,7 @@ header
 {
   /* justify-content: space-between; */
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   background-color:  #DEEBFF;
 }
@@ -165,6 +167,7 @@ nav a:hover
 #page-block
 {
   width: 95%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -385,7 +388,6 @@ nav a:hover
 
 #activity-card-list
 {
-  justify-content: space-between;
   margin-top: 15px;
 }
 
@@ -486,9 +488,43 @@ footer p
     width: 95%;
   }
 
-  header
+  /* HEADER */
+
+  #nav-links
   {
-    flex-wrap: wrap;
+    order: 2;
+    width: 100%;
+  }
+
+  #nav-links ul
+  {
+    justify-content: center;
+    margin: 0;
+  }
+
+  #nav-links li
+  {
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #F2F2F2;
+  }
+
+  #nav-links li:hover
+  {
+    border-top: 0;
+    border-bottom: 2px solid #0065FC;
+  }
+
+  #nav-links a
+  {
+    padding: 0;
+    padding-top: 0px;
+  }
+
+  nav a:hover
+  {
+    border: 0;
   }
 
   #filter-container 
