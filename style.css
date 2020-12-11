@@ -350,7 +350,6 @@ nav a:hover
 .popular-card .card-img
 {
   width: 40%;
-  height: 140px;
   border-radius: 20px 0 0 20px;
 }
 
@@ -368,11 +367,13 @@ nav a:hover
 .card-body p
 {
   margin-bottom: 5px;
+  padding-right: 5px;
 }
 
 .card-body h3
 {
   margin: 10px 0 5px 0;
+  padding-right: 10px;
 }
 
 /* ----> ACTIVITIES BLOCK */
@@ -541,6 +542,7 @@ footer p
     order: 1;
     width: auto;
     border-radius: 0;
+    margin: 0;
   }
 
   #activities-block
@@ -557,6 +559,7 @@ footer p
   .activity-slot
   {
     width: 100%;
+    padding: 0 15px;
   }
 
   .activity-card
