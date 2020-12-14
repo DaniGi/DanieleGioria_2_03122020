@@ -12,16 +12,14 @@
 
     <header class="flex">
 
-      <div id="titre_principal">
-        <div id="logo">
-          <img src="images/logo/Reservia.svg" alt="Logo Reservia" />    
-        </div>
+      <div id="logo">
+        <img src="images/logo/Reservia.svg" alt="Logo Reservia" />    
       </div>
 
       <nav id="nav-links">
         <ul class="flex">
-          <li><a href="#search-results-block">Hébergements</a></li>
-          <li><a href="#activities-block">Activités</a></li>
+          <li><a href="#results">Hébergements</a></li>
+          <li><a href="#activities">Activités</a></li>
         </ul>
       </nav>
 
@@ -33,9 +31,9 @@
       
     </header>
 
-    <div id="page-block">
+    <div id="page">
       
-      <div id="search-block">
+      <div id="search">
 
         <h1><strong>Trouvez votre hébergements pour des vacances de  rêve</strong></h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -43,32 +41,32 @@
         <div id="search-box" class="flex">
           <i class="fas fa-map-marker-alt"></i>
           <input type="text" placeholder="Marseille, France">
-          <button id="search-text-button"><h3><strong>Rechercher</strong></h3></button>
-          <button id="search-icon-button"><i class="fas fa-search"></i></button>
+          <button id="search-button-text"><strong>Rechercher</strong></button>
+          <button id="search-button-icon"><i class="fas fa-search"></i></button>
         </div>
 
-        <div id="filter-container" class="flex">
+        <div id="filter-box" class="flex">
 
           <h3><strong>Filtres</strong></h3>
 
           <div id="filter-list" class="flex">
 
-            <div class="filter-list--item flex">
+            <div class="filter-item flex">
               <i class="fas fa-money-bill-wave blue"></i>
               <h3><strong>Économique</strong></h3>
             </div>
 
-            <div class="filter-list--item flex">
+            <div class="filter-item flex">
               <i class="fas fa-child blue"></i>
               <h3><strong>Familial</strong></h3>
             </div>
 
-            <div class="filter-list--item flex">
+            <div class="filter-item flex">
               <i class="fas fa-heart blue"></i>
               <h3><strong>Romantique</strong></h3>
             </div>
 
-            <div class="filter-list--item flex">
+            <div class="filter-item flex">
               <i class="fas fa-dog blue"></i>
               <h3><strong>Animaux autorisés</strong></h3>
             </div>
@@ -77,22 +75,22 @@
 
         </div>
         
-        <div id="info_n_logements" class="flex">
+        <div id="info" class="flex">
           <i class="fas fa-info blue"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
       </div>
 
-      <div id="search-results-block" class="flex">
+      <div id="results" class="flex">
 
-        <section id="search-results-section">
+        <section id="hotels">
 
           <h2><strong>Hébergements a Marseille</strong></h2>
 
-          <div id="search-result-card-grid" class="flex">
+          <div id="hotels-grid" class="flex">
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Auberge la Cannebière</h3>
@@ -105,7 +103,7 @@
               </div>
             </a>
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Hôtel du port</h3>
@@ -118,7 +116,7 @@
               </div>
             </a>
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Hôtel Les mouettes</h3>
@@ -131,7 +129,7 @@
               </div>
             </a>
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Hôtel de la mer</h3>
@@ -144,7 +142,7 @@
               </div> 
             </a>
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Auberge Le Panier</h3>
@@ -157,7 +155,7 @@
               </div>
             </a>
 
-            <a href="#" class="flex search-results-card">
+            <a href="#" class="flex hotel-card">
               <img class="card-img width100" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
               <div class="card-body">
                 <h3>Hôtel chez Amina</h3>
@@ -172,25 +170,25 @@
 
           </div>
 
-          <a href="#search-results-block"><strong>Afficher plus</strong></a>
+          <a href="#results"><strong>Afficher plus</strong></a>
           
         </section>
 
-        <aside id="popular-results-aside">
+        <aside id="popular">
 
           <div id="title" class="flex">
             <h2><strong>Les plus populaires</strong></h2>
             <i class="fas fa-chart-line"></i>
           </div>
 
-          <div id="popular-card-list" class="flex">
+          <div id="popular-list" class="flex">
 
             <a href="#" class="popular-card flex">
               <img class="card-img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
               <div class="card-body flex">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de <strong>128€</strong></p>
-                <div class="review">
+                <div class="rating">
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
@@ -205,7 +203,7 @@
               <div class="card-body flex">
                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                 <p>Nuit à partir de <strong>71€</strong></p>
-                <div class="review">
+                <div class="rating">
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
@@ -220,7 +218,7 @@
               <div class="card-body flex">
                 <h3>Hôtel Tout bleu et blanc</h3>
                 <p>Nuit à partir de <strong>68€</strong></p>
-                <div class="review">
+                <div class="rating">
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
                   <i class="fas fa-star blue"></i>
@@ -235,13 +233,13 @@
 
       </div>
 
-      <div id="activities-block" class="flex">
+      <div id="activities" class="flex">
 
         <h1><strong>Activités à Marseille</strong></h1>
 
-        <div id="activity-card-list" class="flex">
+        <div id="activities-grid" class="flex">
 
-          <div class="activity-slot flex">
+          <div class="activities-column flex">
 
             <a href="#" class="activity-card flex">
               <img class="card-img" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
@@ -250,7 +248,7 @@
 
           </div>
           
-          <div class="activity-slot flex">
+          <div class="activities-column flex">
 
             <a href="#" class="activity-card flex">
               <img class="card-img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
@@ -264,7 +262,7 @@
 
           </div>
 
-          <div class="activity-slot flex">
+          <div class="activities-column flex">
 
             <a href="#" class="activity-card flex">
               <img class="card-img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
@@ -273,7 +271,7 @@
 
           </div>
 
-          <div class="activity-slot flex">
+          <div class="activities-column flex">
 
             <a href="#" class="activity-card flex">
               <img class="card-img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
