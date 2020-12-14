@@ -95,13 +95,6 @@ i
   font-size: 20px;
 }
 
-.icon
-{
-  width: 15px;
-  height: 15px;
-  padding: 10px;
-}
-
 .fa-money-bill-wave
 {
   font-size: 15px;
@@ -120,7 +113,7 @@ i
   margin-bottom: 5px;
 }
 
-.fa-star, nav ul, .popular-card .icon
+.fa-star, nav ul
 {
   padding: 0;
 }
@@ -134,7 +127,6 @@ i
 
 header
 {
-  /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
