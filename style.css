@@ -502,7 +502,7 @@ footer p
 
 /* MOBILE */
 
-@media all and (max-width: 629px)
+@media all and (max-device-width: 629px)
 {
 
   header, footer
