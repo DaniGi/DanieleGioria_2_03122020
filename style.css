@@ -93,7 +93,7 @@ a:hover
 }
 
 header, footer{
-  width: 100%;
+  width: 95%;
   max-width: 1260px;
   margin: auto;
 }
@@ -145,7 +145,6 @@ header
 
 #logo
 {
-  padding-left: 30px;
   margin-right: auto;
 }
 
@@ -512,7 +511,7 @@ footer p
 
 /* TABLET */
 
-@media all and (max-width: 930px) and (min-width: 629px)
+@media all and (max-width: 930px) and (min-width: 630px)
 {
 
   #filter-box 
@@ -571,7 +570,7 @@ footer p
 @media all and (max-width: 629px)
 {
 
-  header, footer
+  footer
   {
     width: auto;
   }
