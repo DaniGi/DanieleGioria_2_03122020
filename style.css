@@ -38,6 +38,7 @@ body
 {  
     font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
+    min-width: 320px;
 }
 
 button
@@ -502,7 +503,7 @@ footer p
 
 /* MOBILE */
 
-@media all and (max-device-width: 629px)
+@media all and (max-width: 629px)
 {
 
   header, footer
