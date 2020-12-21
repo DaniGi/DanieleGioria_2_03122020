@@ -32,15 +32,6 @@
   width: 100%;
 }
 
-div.wrapper:nth-child(1)
-{
-  background-color: #DEEBFF;
-}
-div.wrapper:nth-child(3)
-{
-  background-color: #F2F2F2;
-}
-
 /* HTML ELEMENTS */
 
 body
@@ -92,7 +83,8 @@ a:hover
   color: #0065FC;
 }
 
-header, footer{
+header
+{
   width: 95%;
   max-width: 1260px;
   margin: auto;
@@ -140,10 +132,9 @@ header
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  background-color:  #DEEBFF;
 }
 
-#logo
+.logo
 {
   margin-right: auto;
 }
@@ -166,22 +157,22 @@ nav a:hover
 
 /* BLOCK PAGE */
 
-#page
+.page
 {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1260px;
   margin: auto;
 }
 
 /* ----> SEARCH BLOCK */
 
-#search > p
+.search > p
 {
   margin-top: 5px;
 }
 
 /* --------> SEARCH BOX */
-#search-box
+.search-box
 {
   background-color: white;
   border: 1px solid #F2F2F2;
@@ -191,14 +182,14 @@ nav a:hover
   margin: 20px 0;
 }
 
-#search-box .fa-map-marker-alt
+.search-box .fa-map-marker-alt
 {
   background-color: #F2F2F2;
   border-radius: 9px 0 0 9px;
   padding: 15px 18px 12px 18px;
 }
 
-#search-box input
+.search-box input
 {
   border: none;
   flex: 1;
@@ -207,35 +198,29 @@ nav a:hover
   min-width: 0;
 }
 
-#search-box button
+.search-box .search-button
 {
+  padding: 0 10px;
+  border-radius: 0 10px 10px 0;
+  font-size: 1rem;
   border: none;
   color: white;
   background-color: #0065FC;
 }
 
-#search-button-text
-{
-  padding: 0 10px;
-  border-radius: 0 10px 10px 0;
-  font-size: 1rem;
-}
-
-#search-button-icon
+.search-button i
 {
   display: none;
-  padding: 0 5px;
-  border-radius: 10px;
 }
 
 /* --------> FILTER LIST */
-#filter-box 
+.filter-box 
 {
   align-items: center;
   margin: 20px 0;
 }
 
-#filter-list
+.filter-list
 {
   align-items: center;
   flex-wrap: wrap;
@@ -270,13 +255,13 @@ nav a:hover
 }
 
 /* --------> INFO N LOGEMENTS */
-#info
+.info
 {
   align-items: center;
   margin-bottom: 25px;
 }
 
-#info i
+.info i
 {
   font-size: 10px;
   padding: 4px 7px;
@@ -288,12 +273,12 @@ nav a:hover
 /* ----> SEARCH RESULTS BLOCK */
 
 /* --------> SEARCH RESULTS SECTION */
-#results
+.results
 {
   justify-content: space-between;
 }
 
-#hotels
+.hotels
 {
   padding: 30px 20px 30px 20px;
   background-color: #F2F2F2;
@@ -301,7 +286,7 @@ nav a:hover
   width: 65%;
 }
 
-#hotels-grid
+.hotels-grid
 {
   justify-content: space-between;
   margin-bottom: 30px;
@@ -331,7 +316,7 @@ nav a:hover
 }
 
 /* --------> POPULAR RESULTS ASIDE */
-#popular
+.popular
 {
   background-color: #F2F2F2;
   border-radius: 10px;
@@ -340,19 +325,19 @@ nav a:hover
   width: 27%;
 }
 
-#popular #title
+.popular .title
 {
   justify-content: space-between;
 }
 
-#popular #title i
+.popular .title i
 {
   display: inline-block;
   padding: 0;
   padding-top: 4px;
 }
 
-#popular-list
+.popular-list
 {
   flex-direction: column;
   align-items: center;
@@ -412,13 +397,13 @@ nav a:hover
 }
 
 /* ----> ACTIVITIES BLOCK */
-#activities
+.activities
 {
   flex-direction: column;
   padding-top: 25px;
 }
 
-#activities-grid
+.activities-grid
 {
   margin-top: 15px;
 }
@@ -488,15 +473,18 @@ nav a:hover
 /* FOOTER */
 footer
 {
+  max-width: 1320px;
+  margin: auto;
   flex-wrap: wrap;
   margin-top: 50px;
   background-color: #F2F2F2;
 }
 
-footer div
+footer > div
 {
   padding: 30px 15px 15px 0px;
-  margin-right: 100px;
+  margin-right: 12%;
+  margin-left: 2.5%;
 }
 
 footer h2
@@ -514,7 +502,7 @@ footer p
 @media all and (max-width: 930px) and (min-width: 630px)
 {
 
-  #filter-box 
+  .filter-box 
   {
     flex-direction: column;
     align-items: initial;
@@ -524,19 +512,19 @@ footer p
     margin-top: 10px;
   }
   /* ----> SEARCH RESULTS BLOCK */
-  #results
+  .results
   {
     flex-direction: column;
   }
 
-  #hotels
+  .hotels
   {
     order: 2;
     width: auto;
     padding: 15px;
   }
 
-  #popular
+  .popular
   {
     
     order: 1;
@@ -546,7 +534,7 @@ footer p
     margin-bottom: 20px;
   }
 
-  #popular-list
+  .popular-list
   {
     flex-direction: row;
     justify-content: space-between;
@@ -570,26 +558,26 @@ footer p
 @media all and (max-width: 629px)
 {
 
-  #page
+  .page
   {
     width: 95%;
   }
 
   /* HEADER */
 
-  #nav-links
+  .nav-links
   {
     order: 2;
     width: 100%;
   }
 
-  #nav-links ul
+  .nav-links ul
   {
     justify-content: center;
     margin: 0;
   }
 
-  #nav-links li
+  .nav-links li
   {
     width: 50%;
     text-align: center;
@@ -597,13 +585,13 @@ footer p
     border-bottom: 2px solid #F2F2F2;
   }
 
-  #nav-links li:hover
+  .nav-links li:hover
   {
     border-top: 0;
     border-bottom: 2px solid #0065FC;
   }
 
-  #nav-links a
+  .nav-links a
   {
     padding: 0;
     padding-top: 0px;
@@ -614,7 +602,7 @@ footer p
     border: 0;
   }
 
-  #filter-box 
+  .filter-box 
   {
     flex-direction: column;
     align-items: initial;
@@ -624,29 +612,29 @@ footer p
     margin-top: 10px;
   }
 
-  #search-box
+  .search-box
   {
     width: 100%;
   }
 
-  #search-button-icon
+  .search-button i
   {
     display: block;
     background-color: #0065FC;
   }
 
-  #search-button-text
+  .search-button strong
   {
     display: none;
   }
 
   /* ----> SEARCH RESULTS BLOCK */
-  #results
+  .results
   {
     flex-direction: column;
   }
 
-  #hotels
+  .hotels
   {
     order: 2;
     width: auto;
@@ -659,7 +647,7 @@ footer p
     width: 100%;
   }
 
-  #popular
+  .popular
   {
     order: 1;
     width: auto;
@@ -673,12 +661,12 @@ footer p
     height: 140px;
   }
 
-  #activities
+  .activities
   {
     padding: 25px 15px 0 15px;
   }
 
-  #activities-grid
+  .activities-grid
   {
     flex-direction: column;
     align-items: center;
@@ -727,7 +715,7 @@ footer p
 
   footer > div
   {
-    padding-left: 30px;
+    padding-left: 15px;
   }
 
 }
