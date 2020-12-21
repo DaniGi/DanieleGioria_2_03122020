@@ -1,5 +1,4 @@
 /* CUSTOM FONT */
-
 @font-face
 {
     font-family: 'Raleway';
@@ -9,7 +8,6 @@
 }
 
 /* UTILITY CLASSES */
-
 .card-img
 {
   object-fit: cover;
@@ -33,7 +31,6 @@
 }
 
 /* HTML ELEMENTS */
-
 body
 {  
     font-family: 'Raleway', Arial, sans-serif;
@@ -126,7 +123,6 @@ i
 }
 
 /* HEADER */
-
 header
 {
   align-items: center;
@@ -155,8 +151,7 @@ nav a:hover
   border-top: 2px solid #0065FC;
 }
 
-/* BLOCK PAGE */
-
+/*PAGE */
 .page
 {
   width: 95%;
@@ -164,7 +159,7 @@ nav a:hover
   margin: auto;
 }
 
-/* ----> SEARCH BLOCK */
+/* ----> SEARCH SECTION */
 
 .search > p
 {
@@ -198,7 +193,7 @@ nav a:hover
   min-width: 0;
 }
 
-.search-box .search-button
+.search-button
 {
   padding: 0 10px;
   border-radius: 0 10px 10px 0;
@@ -213,7 +208,7 @@ nav a:hover
   display: none;
 }
 
-/* --------> FILTER LIST */
+/* --------> FILTER BOX */
 .filter-box 
 {
   align-items: center;
@@ -254,7 +249,7 @@ nav a:hover
   border-radius: 50%;
 }
 
-/* --------> INFO N LOGEMENTS */
+/* --------> INFO */
 .info
 {
   align-items: center;
@@ -270,9 +265,9 @@ nav a:hover
   margin-right: 5px;
 }
 
-/* ----> SEARCH RESULTS BLOCK */
+/* ----> RESULTS SECTION */
 
-/* --------> SEARCH RESULTS SECTION */
+/* --------> HOTELS SECTION */
 .results
 {
   justify-content: space-between;
@@ -315,7 +310,7 @@ nav a:hover
   margin-left: 10px;
 }
 
-/* --------> POPULAR RESULTS ASIDE */
+/* --------> POPULAR ASIDE */
 .popular
 {
   background-color: #F2F2F2;
@@ -396,7 +391,7 @@ nav a:hover
   padding-right: 10px;
 }
 
-/* ----> ACTIVITIES BLOCK */
+/* ----> ACTIVITIES SECTION */
 .activities
 {
   flex-direction: column;
@@ -498,7 +493,6 @@ footer p
 }
 
 /* TABLET */
-
 @media all and (max-width: 930px) and (min-width: 630px)
 {
 
@@ -511,7 +505,7 @@ footer p
   {
     margin-top: 10px;
   }
-  /* ----> SEARCH RESULTS BLOCK */
+  /* ----> RESULTS SECTION */
   .results
   {
     flex-direction: column;
@@ -524,6 +518,7 @@ footer p
     padding: 15px;
   }
 
+  /* --------> POPULAR ASIDE */
   .popular
   {
     
@@ -554,7 +549,6 @@ footer p
 }
 
 /* MOBILE */
-
 @media all and (max-width: 629px)
 {
 
@@ -617,6 +611,12 @@ footer p
     width: 100%;
   }
 
+  .search-button
+  {
+    padding: 0 5px;
+    border-radius: 10px;
+  }
+
   .search-button i
   {
     display: block;
@@ -628,7 +628,7 @@ footer p
     display: none;
   }
 
-  /* ----> SEARCH RESULTS BLOCK */
+  /* ----> RESULTS SECTION */
   .results
   {
     flex-direction: column;
