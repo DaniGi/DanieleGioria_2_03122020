@@ -341,9 +341,9 @@ nav a:hover
   height: 29%;
   background-color: white;
   border-radius: 20px;
-  border: 3px solid white;
   box-sizing: border-box;
   margin-top: 20px;
+  padding: 3px;
   box-shadow: 4px 4px 4px #cecdcd;
 }
 
@@ -554,14 +554,6 @@ footer p
 
   /* HEADER */
 
-  nav .inscription
-  {
-    position: absolute;
-    top: 20px;
-    right: 5%;
-    border: none;
-  }
-
   nav
   {
     width: 100%;
@@ -578,25 +570,6 @@ footer p
     text-align: center;
   }
 
-  nav .other
-  {
-    border-bottom: 2px solid #F2F2F2;
-    padding-top: 10px;
-    width: 50%;
-  }
-
-  nav .other:hover
-  {
-    border-top: 0;
-    border-bottom: 2px solid #0065FC;
-    
-  }
-
-  nav .other:hover a
-  {
-    color: #0065FC;
-  }
-
   nav a
   {
     padding: 15px 0;
@@ -606,6 +579,36 @@ footer p
   nav a:hover
   {
     border: 0;
+  }
+
+  nav .inscription
+  {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    border: none;
+  }
+
+  nav .inscription a
+  {
+    border: none;
+  }
+
+  nav .other
+  {
+    padding-top: 10px;
+    width: 50%;
+  }
+
+  nav .other a
+  { 
+    border-bottom: 2px solid #F2F2F2
+  }
+
+  nav .other:hover a
+  {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
   }
 
   .filter-box 
